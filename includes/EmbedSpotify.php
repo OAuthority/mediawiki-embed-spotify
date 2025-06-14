@@ -16,7 +16,7 @@ class EmbedSpotify {
 	 * @return string
 	 */
 	public static function renderSpotify( $input, array $args, Parser $parser, PPFrame $frame ) {
-		$input = htmlspecialchars( $input );
+		$input = htmlspecialchars( $input ?? '' );
 		if ( empty( $args['width'] ) ) {
 			$args['width'] = '300px';
 		}
